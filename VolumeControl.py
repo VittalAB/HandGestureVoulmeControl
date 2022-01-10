@@ -44,8 +44,8 @@ volPer = 0
 while True:
     succes, img = cap.read()
     img = detector.findHands(img)
-
     lmlist = detector.findPosition(img, 0, draw=False)
+
     if len(lmlist)!=0:
         # print(lmlist[4], lmlist[8])
 
